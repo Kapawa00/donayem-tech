@@ -1,0 +1,13 @@
+# À placer à la racine du projet Laravel (pas dans /public) uniquement si l'hébergeur
+# ne permet pas de pointer le document root directement sur /backend/public (cas
+# fréquent en hébergement mutualisé). Redirige toute requête vers /public, qui a son
+# propre .htaccess (routing front-controller standard Laravel).
+#
+# Sur Railway/VPS avec contrôle du document root, préférer pointer directement sur
+# /public et ignorer ce fichier.
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L]
+</IfModule>

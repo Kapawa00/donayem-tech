@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy-900: #050A22;
+  --color-navy-500: #1A3490;
+  --color-gold-400: #D4A336;
+  --color-gold-300: #E8C163;
+  --color-surface: #F9FAFB;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--dark, #111827);
+  background-color: var(--color-surface);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-syne {
+  font-family: var(--font-syne), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+  background: var(--color-gold-400);
+  opacity: 0.3;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.testimonials-swiper .swiper-pagination {
+  position: static;
+  margin-top: 2.5rem;
+}
+
+/* Neutralise les animations CSS pures (hors Framer Motion, déjà géré via useReducedMotion) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

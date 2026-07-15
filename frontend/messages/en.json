@@ -1,0 +1,426 @@
+{
+  "LocalBusinessSchema": {
+    "description": "DONAYEM TECH is a digital agency in Douala specializing in web design, graphic design, digital marketing, office software training, web and mobile development, website hosting, professional Google Business and Facebook page setup, and Shopify stores."
+  },
+  "ServiceFaqs": {
+    "webdesign-infographie": [
+      { "q": "How long does it take to create a logo or visual identity?", "a": "Expect 3 to 7 business days depending on the project's complexity and the number of revisions requested." },
+      { "q": "Do you offer revisions after delivery?", "a": "Yes, every order includes two free rounds of revisions. Additional revisions may be billed depending on their scope." },
+      { "q": "Do I receive the source files?", "a": "Yes, you receive the final files in formats suited to your needs (print and web), plus the source files on request." },
+      { "q": "Do you work with businesses as well as individuals?", "a": "Absolutely. We support both SMEs and individuals for one-off needs like an event or a visual resume." }
+    ],
+    "marketing-digital": [
+      { "q": "Is the advertising budget included in the price?", "a": "No, our fees cover campaign management and creation. The ad spend paid to Meta (Facebook/Instagram) is settled separately based on your goals." },
+      { "q": "What's the commitment period?", "a": "We recommend a minimum of 3 months to see meaningful results, but no-commitment monthly plans are also available." },
+      { "q": "How soon can I expect results?", "a": "Early indicators (engagement, reach) shift within the first 2 weeks. Concrete business results typically appear after 4 to 8 weeks." },
+      { "q": "Who creates the published content?", "a": "Our team designs the visuals and writes the copy, drawing on the photos and information you provide." }
+    ],
+    "formation-bureautique": [
+      { "q": "Are the training sessions individual or group-based?", "a": "Both formats are available. One-on-one sessions allow a personalized pace, while group sessions are more affordable." },
+      { "q": "How long does a training program last?", "a": "It ranges from a few hours for a focused module (e.g. basic Excel) to several weeks for a complete program." },
+      { "q": "Is a certificate awarded at the end?", "a": "Yes, every participant who completes the program receives a DONAYEM TECH training certificate." },
+      { "q": "Can I get help with just my dissertation writing?", "a": "Yes, this support is available independently of the office software training, quoted based on the amount of work involved." }
+    ],
+    "boutique-shopify": [
+      { "q": "What do I need to get my project started?", "a": "Your products (photos and descriptions if possible), your brand name, and your preferred payment methods are enough to begin." },
+      { "q": "Which payment methods can be integrated?", "a": "Orange Money, MTN Mobile Money, as well as Visa/MasterCard via a secure payment gateway." },
+      { "q": "How long does launching the store take?", "a": "On average 2 to 3 weeks depending on catalog size and the level of customization requested." },
+      { "q": "Do you offer support after launch?", "a": "Yes, store management training is included, and technical support remains available after going live." }
+    ]
+  },
+  "ServicesPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Services",
+    "heading": "Our Services",
+    "subheading": "Four complementary areas of expertise to support your digital presence, from visual design to launching your online store.",
+    "metaTitle": "Our Services",
+    "metaDescription": "Web design & graphic design, digital marketing, office software training, Shopify stores: discover DONAYEM TECH's 4 service areas."
+  },
+  "PricingPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Pricing",
+    "heading": "Our Pricing",
+    "subheading": "Transparent rates tailored to the scope of your project. The final price is always confirmed after a free, personalized quote.",
+    "metaTitle": "Pricing",
+    "metaDescription": "Web design & graphic design, digital marketing, office software training, Shopify stores: discover DONAYEM TECH's starting rates.",
+    "currency": "F CFA",
+    "popularBadge": "Most popular",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "100 000",
+        "subtitle": "Entrepreneurs & small businesses",
+        "cta": "Choose Starter",
+        "features": [
+          "Domain + hosting",
+          "3 professional emails",
+          "1 to 3 page website",
+          "Responsive design",
+          "Basic SEO",
+          "7-day delivery"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "price": "250 000",
+        "subtitle": "SMEs who want a complete website",
+        "cta": "Choose Business",
+        "features": [
+          "Unlimited domain + hosting",
+          "15 professional emails",
+          "3 to 5 page site + blog",
+          "Custom design",
+          "Advanced SEO",
+          "Enhanced security",
+          "2-week delivery"
+        ]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "999 900",
+        "subtitle": "E-commerce & custom projects",
+        "cta": "Choose Premium",
+        "features": [
+          "100% custom website",
+          "Unlimited WooCommerce store",
+          "Unlimited emails",
+          "Complete SEO strategy",
+          "Marketing automation",
+          "Ads campaigns included",
+          "6-month priority support"
+        ]
+      }
+    },
+    "footerHeading": "A custom project?",
+    "footerText": "Every project is unique: contact us for a free, personalized quote, with no commitment.",
+    "footerCta": "Discuss my project"
+  },
+  "ServiceDetailPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbServices": "Services",
+    "includedHeading": "What's included",
+    "startingPrice": "Starting at {price} XAF",
+    "customQuote": "Custom quote",
+    "portfolioHeading": "Our work",
+    "faqHeading": "Frequently asked questions"
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "formation": "Training",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "requestQuote": "Request a quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "changeLanguage": "Change language"
+  },
+  "ServiceLinks": {
+    "webdesign": "Web Design & Graphic Design",
+    "marketing": "Digital Marketing",
+    "formation": "Office Training",
+    "shopify": "Shopify Store"
+  },
+  "Footer": {
+    "tagline": "Bringing your digital ideas to life.",
+    "servicesHeading": "Services",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact",
+    "blog": "Blog",
+    "address": "Ange Raphaël – Hôtel Sélect, Douala",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with ❤️ in Douala"
+  },
+  "WhatsApp": {
+    "tooltip": "Chat with us on WhatsApp",
+    "ariaLabel": "Contact DONAYEM TECH on WhatsApp",
+    "prefillMessage": "Hello DONAYEM TECH, I would like..."
+  },
+  "ContactForm": {
+    "heading": "Let's talk about your project",
+    "subjectPlaceholder": "Select a subject",
+    "subjectQuote": "Quote",
+    "subjectQuestion": "Question",
+    "subjectPartnership": "Partnership",
+    "subjectOther": "Other",
+    "nameLabel": "Full name",
+    "nameRequired": "Full name is required",
+    "emailLabel": "Email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "phoneLabelOptional": "Phone (optional)",
+    "subjectLabel": "Subject",
+    "subjectRequired": "Please select a subject",
+    "messageLabel": "Message",
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters",
+    "submit": "Send message",
+    "successToast": "Your message has been sent! We'll get back to you shortly.",
+    "errorToast": "Something went wrong. Please try again or contact us directly."
+  },
+  "QuickQuoteForm": {
+    "heading": "Quick quote",
+    "subheading": "Describe what you need, we'll reply within 24h.",
+    "nameLabel": "Full name",
+    "nameRequired": "Full name is required",
+    "emailLabel": "Email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "phoneLabel": "Phone",
+    "messageLabel": "What do you need?",
+    "messageRequired": "Please describe your need",
+    "submit": "Send my request",
+    "successToast": "Your request has been sent! We'll contact you shortly.",
+    "errorToast": "Something went wrong. Please try again or contact us directly."
+  },
+  "DevisForm": {
+    "stepService": "Service",
+    "stepProject": "Project",
+    "stepContact": "Contact info",
+    "stepSummary": "Summary",
+    "stepIndicator": "Step {step}/{total}",
+    "devWebLabel": "Web Development",
+    "hostingLabel": "Hosting",
+    "budgetPlaceholder": "Select a budget",
+    "budgetUnder50": "< 50,000 XAF",
+    "budget50to200": "50,000–200,000 XAF",
+    "budget200to500": "200,000–500,000 XAF",
+    "budgetOver500": "> 500,000 XAF",
+    "budgetDiscuss": "To discuss",
+    "serviceSelectError": "Select at least one service",
+    "genericError": "Something went wrong. Please try again or contact us directly.",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Send my request",
+    "serviceStepHeading": "Which service do you need?",
+    "serviceStepSubheading": "Select one or more services.",
+    "selected": "Selected",
+    "projectStepHeading": "Your project",
+    "descriptionLabel": "Describe your project or need",
+    "descriptionRequired": "Please describe your project",
+    "descriptionMinLength": "Please provide at least 50 characters",
+    "budgetLabel": "Estimated budget",
+    "budgetRequired": "Please choose a budget",
+    "deadlineLabel": "Desired timeline (optional)",
+    "contactStepHeading": "Your contact info",
+    "nameLabel": "Full name",
+    "nameRequired": "Full name is required",
+    "emailLabel": "Email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "phoneLabel": "Phone",
+    "phoneRequired": "Phone is required",
+    "companyLabel": "Company (optional)",
+    "consentLabel": "I agree to be contacted by DONAYEM TECH",
+    "consentRequired": "Please agree to be contacted",
+    "recapHeading": "Summary",
+    "recapServices": "Services",
+    "recapProject": "Project",
+    "recapBudget": "Budget",
+    "recapDeadline": "Desired timeline",
+    "recapName": "Full name",
+    "recapEmail": "Email",
+    "recapPhone": "Phone",
+    "recapCompany": "Company",
+    "successHeading": "Request sent!",
+    "successMessage": "Thank you, your quote request has been received. Our team will contact you within 24h.",
+    "whatsappFollowupMessage": "Hello DONAYEM TECH, I just submitted a quote request.",
+    "followWhatsapp": "Follow up on WhatsApp",
+    "backHome": "Back to home"
+  },
+  "CookieBanner": {
+    "message": "We use cookies to enhance your browsing experience.",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "ErrorState": {
+    "defaultMessage": "Something went wrong while loading the data.",
+    "retry": "Retry"
+  },
+  "Lightbox": {
+    "close": "Close",
+    "previous": "Previous project",
+    "next": "Next project"
+  },
+  "ServiceCard": {
+    "learnMore": "Learn more"
+  },
+  "BlogCard": {
+    "readMore": "Read more"
+  },
+  "PaymentConfirmation": {
+    "checkingStatus": "Checking your payment...",
+    "successTitle": "Payment received successfully!",
+    "transactionRefLabel": "Transaction reference:",
+    "successMessage": "Our team will contact you within 24 hours.",
+    "whatsappCta": "Follow my project on WhatsApp",
+    "backHome": "Back to home",
+    "failedTitle": "Payment failed",
+    "failedMessage": "An error occurred while verifying your payment. No amount was charged if the transaction did not go through.",
+    "retry": "Try again",
+    "whatsappMessage": "Hello DONAYEM TECH, I've just made a payment and I'd like to follow up on my project."
+  },
+  "ServiceOverviewBlock": {
+    "startingPrice": "Starting at {price} XAF",
+    "customQuote": "Custom quote",
+    "requestQuoteCta": "Request a quote for this service"
+  },
+  "BlogGrid": {
+    "allCategory": "All",
+    "errorMessage": "Unable to load articles right now.",
+    "emptyMessage": "No articles yet. Check back soon!",
+    "loadMore": "Load more"
+  },
+  "PortfolioExplorer": {
+    "allCategory": "All",
+    "errorMessage": "Unable to load the portfolio right now.",
+    "emptyMessage": "No projects in this category yet.",
+    "loadMore": "Load more"
+  },
+  "Hero": {
+    "badge": "Digital agency in Douala",
+    "headingPrefix": "Bring your",
+    "headingHighlight": "digital ideas",
+    "headingSuffix": " to life",
+    "description": "DONAYEM TECH supports you in creating visual content, digital marketing, office software training, and building online stores.",
+    "ctaPrimary": "Our services",
+    "ctaSecondary": "Request a quote",
+    "statsLine": "200+ happy clients · 500+ projects delivered · Based in Douala",
+    "serviceWebdesign": "Webdesign",
+    "serviceMarketing": "Marketing",
+    "serviceFormation": "Training",
+    "serviceShopify": "Shopify",
+    "scrollAriaLabel": "Scroll to next section"
+  },
+  "ServicesSection": {
+    "eyebrow": "Our services",
+    "title": "Everything you need",
+    "subtitle": "From graphic design to digital marketing, we cover every aspect of your communication.",
+    "errorMessage": "We couldn't load our services right now.",
+    "footerText": "Not sure which service is right for you?",
+    "ctaLabel": "Let's talk"
+  },
+  "WhyUsSection": {
+    "eyebrow": "Why choose us",
+    "title": "Creativity · Professionalism · Speed",
+    "reason1Title": "Creativity",
+    "reason1Text": "We craft unique content that reflects your identity and captivates your audience.",
+    "reason2Title": "Professionalism",
+    "reason2Text": "Every deliverable meets the highest professional standards, on the agreed timeline.",
+    "reason3Title": "Speed",
+    "reason3Text": "We know time matters. Our teams are responsive and our deadlines are met."
+  },
+  "StatsSection": {
+    "clientsSuffix": "+",
+    "clientsLabel": "Clients served",
+    "projectsSuffix": "+",
+    "projectsLabel": "Projects delivered",
+    "experienceSuffix": " yrs",
+    "experienceLabel": "Experience",
+    "satisfactionSuffix": "%",
+    "satisfactionLabel": "Client satisfaction"
+  },
+  "CtaSection": {
+    "title": "Ready to launch your project?",
+    "subtitle": "Get in touch today and receive a free quote within 24 hours.",
+    "primaryLabel": "Request a quote",
+    "secondaryLabel": "Call us"
+  },
+  "TestimonialsSection": {
+    "eyebrow": "Testimonials",
+    "title": "What our clients say",
+    "errorMessage": "We couldn't load testimonials right now.",
+    "emptyMessage": "No testimonials yet."
+  },
+  "PortfolioPreview": {
+    "eyebrow": "Our work",
+    "title": "A few recent projects",
+    "errorMessage": "We couldn't load our portfolio right now.",
+    "emptyMessage": "No featured work yet.",
+    "ctaLabel": "See all our work"
+  },
+  "AboutHero": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "About",
+    "heading": "About DONAYEM TECH",
+    "subheading": "Your digital partner in the heart of Douala"
+  },
+  "AboutStorySection": {
+    "eyebrow": "Our story",
+    "heading": "Born from a passion for digital",
+    "paragraph1": "DONAYEM TECH was born in Douala from a desire to make digital accessible to everyone: businesses, entrepreneurs and individuals. What started as small webdesign and graphic design projects has grown into a full-service agency, able to support clients from branding all the way through to going live and collecting payments online.",
+    "paragraph2": "Our mission has stayed the same since day one: quality digital solutions, at fair prices, with a human touch. We believe a successful online presence rests on three pillars — creativity, professionalism and speed — and they guide every project we take on.",
+    "imageAlt": "The DONAYEM TECH team at work"
+  },
+  "AboutValuesSection": {
+    "eyebrow": "Our values",
+    "heading": "What defines us",
+    "value1Title": "Creativity",
+    "value1Text": "We believe every idea deserves a unique visual expression.",
+    "value2Title": "Professionalism",
+    "value2Text": "Quality isn't optional — it's our baseline standard.",
+    "value3Title": "Speed",
+    "value3Text": "Your time matters. We deliver on schedule, every time."
+  },
+  "AboutTeamSection": {
+    "eyebrow": "Our team",
+    "heading": "Digital enthusiasts",
+    "text": "A passionate team of digital professionals based in Douala."
+  },
+  "AboutLocationSection": {
+    "eyebrow": "Location",
+    "heading": "Come meet us",
+    "paragraph": "Located in the heart of Douala, at Ange Raphaël (Hôtel Sélect), we're easy to reach for an in-person meeting.",
+    "address": "Ange Raphaël, Hôtel Sélect, Douala, Cameroon",
+    "mapTitle": "DONAYEM TECH location — Douala, Ange Raphaël"
+  },
+  "FormationHero": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Training",
+    "heading": "Office Software Training & Academic Services",
+    "subheading": "Build confidence with office software and get expert help with your CV, cover letters and dissertations, right here in Douala.",
+    "cta": "Register"
+  },
+  "FormationLocationSection": {
+    "eyebrow": "Find us",
+    "heading": "Come meet us",
+    "address": "Located in Douala – Ange Raphaël (Hôtel Sélect)",
+    "hours": "Mon–Sat, 8am–6pm",
+    "mapTitle": "DONAYEM TECH location — Douala, Ange Raphaël"
+  },
+  "FormationModulesSection": {
+    "eyebrow": "Our training programs",
+    "heading": "Practical, step-by-step modules",
+    "subtitle": "Each module pairs theory with hands-on exercises so you can apply what you learn right away.",
+    "errorMessage": "We couldn't load the training modules right now.",
+    "cta": "Register"
+  },
+  "FormationRegistrationSection": {
+    "eyebrow": "Registration",
+    "heading": "Reserve your spot",
+    "subtitle": "Fill out the form below and our team will get back to you within 24 hours to finalize your registration.",
+    "defaultOption": "Select a training program",
+    "academicOptionValue": "Academic Services",
+    "academicOptionLabel": "Academic Services (CV, dissertations, theses...)",
+    "nameLabel": "Full name",
+    "nameRequired": "Full name is required",
+    "emailLabel": "Email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "phoneLabel": "Phone",
+    "phoneRequired": "Phone number is required",
+    "formationLabel": "Training program",
+    "formationRequired": "Please select a training program",
+    "messageLabel": "Message / specific needs",
+    "submit": "Send my request",
+    "successToast": "Your registration request has been sent! We'll get back to you shortly.",
+    "errorToast": "Something went wrong. Please try again or contact us directly."
+  },
+  "AcademicServicesSection": {
+    "eyebrow": "Academic services",
+    "heading": "Complete support for your documents",
+    "errorMessage": "We couldn't load the academic services right now."
+  }
+}
