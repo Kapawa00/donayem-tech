@@ -11,6 +11,7 @@ import Modal from '@/components/ui/Modal';
 import AdminPortfolioFormModal from '@/components/admin/AdminPortfolioFormModal';
 import adminApi from '@/lib/adminAuth';
 import { BLUR_DATA_URL } from '@/lib/blurPlaceholder';
+import { getLocalizedText } from '@/lib/utils';
 
 export default function AdminPortfolioContent() {
   const [items, setItems] = useState([]);
@@ -110,7 +111,7 @@ export default function AdminPortfolioContent() {
                 {(item.thumbnail_url || item.media_url) && (
                   <Image
                     src={item.thumbnail_url || item.media_url}
-                    alt={item.title}
+                    alt={getLocalizedText(item.title)}
                     fill
                     sizes="(min-width: 1024px) 33vw, 50vw"
                     className="object-cover"
@@ -132,7 +133,7 @@ export default function AdminPortfolioContent() {
               </div>
 
               <div className="p-4">
-                <p className="font-syne text-sm font-bold text-navy-900">{item.title}</p>
+                <p className="font-syne text-sm font-bold text-navy-900">{getLocalizedText(item.title)}</p>
                 <p className="mt-1 font-inter text-xs uppercase tracking-widest text-gold-600">
                   {item.category}
                 </p>
@@ -202,7 +203,7 @@ export default function AdminPortfolioContent() {
         maxWidth="max-w-sm"
       >
         <p className="font-inter text-sm text-muted">
-          Cette action est définitive. Voulez-vous vraiment supprimer « {deleteTarget?.title} » ?
+          Cette action est définitive. Voulez-vous vraiment supprimer « {getLocalizedText(deleteTarget?.title)} » ?
         </p>
         <div className="mt-6 flex justify-end gap-3">
           <Button type="button" variant="ghost" onClick={() => setDeleteTarget(null)}>

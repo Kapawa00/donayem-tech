@@ -10,6 +10,7 @@ import Modal from '@/components/ui/Modal';
 import AdminServiceFormModal from '@/components/admin/AdminServiceFormModal';
 import adminApi from '@/lib/adminAuth';
 import { BLUR_DATA_URL } from '@/lib/blurPlaceholder';
+import { getLocalizedText } from '@/lib/utils';
 
 const CATEGORY_LABELS = {
   webdesign: 'Webdesign',
@@ -144,7 +145,7 @@ export default function AdminServicesContent() {
                 {item.cover_image && (
                   <Image
                     src={item.cover_image}
-                    alt={item.title}
+                    alt={getLocalizedText(item.title)}
                     fill
                     sizes="64px"
                     className="object-cover"
@@ -155,7 +156,7 @@ export default function AdminServicesContent() {
               </div>
 
               <div className="min-w-0 flex-1">
-                <p className="truncate font-syne text-sm font-bold text-navy-900">{item.title}</p>
+                <p className="truncate font-syne text-sm font-bold text-navy-900">{getLocalizedText(item.title)}</p>
                 <p className="mt-1 font-inter text-xs uppercase tracking-widest text-gold-600">
                   {CATEGORY_LABELS[item.category] ?? item.category}
                 </p>
@@ -211,7 +212,7 @@ export default function AdminServicesContent() {
         maxWidth="max-w-sm"
       >
         <p className="font-inter text-sm text-muted">
-          Cette action est définitive. Voulez-vous vraiment supprimer « {deleteTarget?.title} » ?
+          Cette action est définitive. Voulez-vous vraiment supprimer « {getLocalizedText(deleteTarget?.title)} » ?
         </p>
         <div className="mt-6 flex justify-end gap-3">
           <Button type="button" variant="ghost" onClick={() => setDeleteTarget(null)}>
