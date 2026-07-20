@@ -17,17 +17,17 @@ export default function AdminLayout({ children }) {
 
   return (
     <html lang="fr" className={`${syne.variable} ${inter.variable}`}>
-      <body className="font-inter antialiased">
+      <body className="overflow-x-hidden font-inter antialiased">
         <AdminAuthProvider>
           {isLoginPage ? (
             <div className="min-h-screen bg-navy-900 font-inter">{children}</div>
           ) : (
-            <div className="flex min-h-screen bg-surface font-inter text-dark">
+            <div className="flex min-h-screen w-full bg-surface font-inter text-dark">
               <AdminSidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
               <div className="flex min-w-0 flex-1 flex-col">
                 <AdminHeader onOpenSidebar={() => setSidebarOpen(true)} />
-                <main className="flex-1 overflow-y-auto p-6">{children}</main>
+                <main className="min-w-0 flex-1 overflow-x-hidden overflow-y-auto p-6">{children}</main>
               </div>
             </div>
           )}

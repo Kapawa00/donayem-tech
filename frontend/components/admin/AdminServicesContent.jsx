@@ -118,79 +118,83 @@ export default function AdminServicesContent() {
           {items.map((item, index) => (
             <div
               key={item.id}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-white p-4 shadow-sm"
+              className="flex flex-col gap-4 rounded-2xl border border-border bg-white p-4 shadow-sm sm:flex-row sm:items-center"
             >
-              <div className="flex flex-col gap-1">
-                <button
-                  type="button"
-                  disabled={index === 0 || reordering}
-                  onClick={() => handleMove(index, -1)}
-                  aria-label="Monter"
-                  className="text-muted hover:text-dark disabled:pointer-events-none disabled:opacity-30"
-                >
-                  <ArrowUp size={16} />
-                </button>
-                <button
-                  type="button"
-                  disabled={index === items.length - 1 || reordering}
-                  onClick={() => handleMove(index, 1)}
-                  aria-label="Descendre"
-                  className="text-muted hover:text-dark disabled:pointer-events-none disabled:opacity-30"
-                >
-                  <ArrowDown size={16} />
-                </button>
+              <div className="flex min-w-0 flex-1 items-center gap-4">
+                <div className="flex flex-col gap-1">
+                  <button
+                    type="button"
+                    disabled={index === 0 || reordering}
+                    onClick={() => handleMove(index, -1)}
+                    aria-label="Monter"
+                    className="text-muted hover:text-dark disabled:pointer-events-none disabled:opacity-30"
+                  >
+                    <ArrowUp size={16} />
+                  </button>
+                  <button
+                    type="button"
+                    disabled={index === items.length - 1 || reordering}
+                    onClick={() => handleMove(index, 1)}
+                    aria-label="Descendre"
+                    className="text-muted hover:text-dark disabled:pointer-events-none disabled:opacity-30"
+                  >
+                    <ArrowDown size={16} />
+                  </button>
+                </div>
+
+                <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-surface">
+                  {item.cover_image && (
+                    <Image
+                      src={item.cover_image}
+                      alt={getLocalizedText(item.title)}
+                      fill
+                      sizes="64px"
+                      className="object-cover"
+                      placeholder="blur"
+                      blurDataURL={BLUR_DATA_URL}
+                    />
+                  )}
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <p className="truncate font-syne text-sm font-bold text-navy-900">{getLocalizedText(item.title)}</p>
+                  <p className="mt-1 font-inter text-xs uppercase tracking-widest text-gold-600">
+                    {CATEGORY_LABELS[item.category] ?? item.category}
+                  </p>
+                </div>
               </div>
 
-              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-surface">
-                {item.cover_image && (
-                  <Image
-                    src={item.cover_image}
-                    alt={getLocalizedText(item.title)}
-                    fill
-                    sizes="64px"
-                    className="object-cover"
-                    placeholder="blur"
-                    blurDataURL={BLUR_DATA_URL}
-                  />
-                )}
-              </div>
-
-              <div className="min-w-0 flex-1">
-                <p className="truncate font-syne text-sm font-bold text-navy-900">{getLocalizedText(item.title)}</p>
-                <p className="mt-1 font-inter text-xs uppercase tracking-widest text-gold-600">
-                  {CATEGORY_LABELS[item.category] ?? item.category}
-                </p>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => handleToggleActive(item)}
-                className={`shrink-0 rounded-pill px-3 py-1.5 font-inter text-xs font-semibold uppercase tracking-widest ${
-                  item.is_active
-                    ? 'bg-gold-400/10 text-gold-600'
-                    : 'bg-surface text-muted'
-                }`}
-              >
-                {item.is_active ? 'Actif' : 'Inactif'}
-              </button>
-
-              <div className="flex shrink-0 items-center gap-4">
+              <div className="flex items-center justify-between gap-4 sm:shrink-0 sm:justify-end">
                 <button
                   type="button"
-                  onClick={() => setFormTarget(item)}
-                  className="flex items-center gap-1.5 font-inter text-sm font-medium text-navy-700 hover:text-navy-900"
+                  onClick={() => handleToggleActive(item)}
+                  className={`shrink-0 rounded-pill px-3 py-1.5 font-inter text-xs font-semibold uppercase tracking-widest ${
+                    item.is_active
+                      ? 'bg-gold-400/10 text-gold-600'
+                      : 'bg-surface text-muted'
+                  }`}
                 >
-                  <Pencil size={14} />
-                  Modifier
+                  {item.is_active ? 'Actif' : 'Inactif'}
                 </button>
-                <button
-                  type="button"
-                  onClick={() => setDeleteTarget(item)}
-                  className="flex items-center gap-1.5 font-inter text-sm font-medium text-red-500 hover:text-red-600"
-                >
-                  <Trash2 size={14} />
-                  Supprimer
-                </button>
+
+                <div className="flex shrink-0 items-center gap-4">
+                  <button
+                    type="button"
+                    onClick={() => setFormTarget(item)}
+                    className="flex items-center gap-1.5 font-inter text-sm font-medium text-navy-700 hover:text-navy-900"
+                  >
+                    <Pencil size={14} />
+                    Modifier
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDeleteTarget(item)}
+                    className="flex items-center gap-1.5 font-inter text-sm font-medium text-red-500 hover:text-red-600"
+                  >
+                    <Trash2 size={14} />
+                    Supprimer
+                  </button>
+                </div>
               </div>
             </div>
           ))}

@@ -93,65 +93,69 @@ export default function AdminTestimonialsContent() {
           {items.map((item) => (
             <div
               key={item.id}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-white p-4 shadow-sm"
+              className="flex flex-col gap-4 rounded-2xl border border-border bg-white p-4 shadow-sm sm:flex-row sm:items-center"
             >
-              <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full bg-surface">
-                {item.client_photo && (
-                  <Image
-                    src={item.client_photo}
-                    alt={item.client_name}
-                    fill
-                    sizes="56px"
-                    className="object-cover"
-                    placeholder="blur"
-                    blurDataURL={BLUR_DATA_URL}
-                  />
-                )}
-              </div>
-
-              <div className="min-w-0 flex-1">
-                <p className="truncate font-syne text-sm font-bold text-navy-900">{item.client_name}</p>
-                {item.client_company && (
-                  <p className="truncate font-inter text-xs text-muted">{item.client_company}</p>
-                )}
-                <div className="mt-1 flex items-center gap-0.5">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <Star
-                      key={index}
-                      size={12}
-                      className={index < item.rating ? 'fill-gold-400 text-gold-400' : 'text-border'}
+              <div className="flex min-w-0 flex-1 items-center gap-4">
+                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full bg-surface">
+                  {item.client_photo && (
+                    <Image
+                      src={item.client_photo}
+                      alt={item.client_name}
+                      fill
+                      sizes="56px"
+                      className="object-cover"
+                      placeholder="blur"
+                      blurDataURL={BLUR_DATA_URL}
                     />
-                  ))}
+                  )}
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <p className="truncate font-syne text-sm font-bold text-navy-900">{item.client_name}</p>
+                  {item.client_company && (
+                    <p className="truncate font-inter text-xs text-muted">{item.client_company}</p>
+                  )}
+                  <div className="mt-1 flex items-center gap-0.5">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <Star
+                        key={index}
+                        size={12}
+                        className={index < item.rating ? 'fill-gold-400 text-gold-400' : 'text-border'}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
 
-              <button
-                type="button"
-                onClick={() => handleToggleActive(item)}
-                className={`shrink-0 rounded-pill px-3 py-1.5 font-inter text-xs font-semibold uppercase tracking-widest ${
-                  item.is_active ? 'bg-gold-400/10 text-gold-600' : 'bg-surface text-muted'
-                }`}
-              >
-                {item.is_active ? 'Actif' : 'Inactif'}
-              </button>
+              <div className="flex items-center justify-between gap-4 sm:shrink-0 sm:justify-end">
+                <button
+                  type="button"
+                  onClick={() => handleToggleActive(item)}
+                  className={`shrink-0 rounded-pill px-3 py-1.5 font-inter text-xs font-semibold uppercase tracking-widest ${
+                    item.is_active ? 'bg-gold-400/10 text-gold-600' : 'bg-surface text-muted'
+                  }`}
+                >
+                  {item.is_active ? 'Actif' : 'Inactif'}
+                </button>
 
-              <div className="flex shrink-0 items-center gap-4">
-                <button
-                  type="button"
-                  onClick={() => setFormTarget(item)}
-                  className="flex items-center gap-1.5 font-inter text-sm font-medium text-navy-700 hover:text-navy-900"
-                >
-                  <Pencil size={14} />
-                  Modifier
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setDeleteTarget(item)}
-                  className="flex items-center gap-1.5 font-inter text-sm font-medium text-red-500 hover:text-red-600"
-                >
-                  <Trash2 size={14} />
-                  Supprimer
-                </button>
+                <div className="flex shrink-0 items-center gap-4">
+                  <button
+                    type="button"
+                    onClick={() => setFormTarget(item)}
+                    className="flex items-center gap-1.5 font-inter text-sm font-medium text-navy-700 hover:text-navy-900"
+                  >
+                    <Pencil size={14} />
+                    Modifier
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDeleteTarget(item)}
+                    className="flex items-center gap-1.5 font-inter text-sm font-medium text-red-500 hover:text-red-600"
+                  >
+                    <Trash2 size={14} />
+                    Supprimer
+                  </button>
+                </div>
               </div>
             </div>
           ))}
