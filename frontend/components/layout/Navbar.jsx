@@ -78,7 +78,7 @@ export default function Navbar() {
             <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-20 w-auto" priority />
           </Link>
 
-          <ul className="hidden items-center gap-8 font-inter text-sm font-medium text-white md:flex">
+          <ul className="hidden items-center gap-6 font-inter text-sm font-medium text-white lg:flex xl:gap-8">
             {navLinks.map((link) => {
               const active = isLinkActive(pathname, link.href);
 
@@ -154,7 +154,7 @@ export default function Navbar() {
             })}
           </ul>
 
-          <div className="hidden items-center gap-5 md:flex">
+          <div className="hidden items-center gap-4 lg:flex xl:gap-5">
             <div
               className="relative"
               onMouseEnter={() => setLangOpen(true)}
@@ -207,7 +207,7 @@ export default function Navbar() {
           <button
             type="button"
             aria-label={t('openMenu')}
-            className="text-white md:hidden"
+            className="text-white lg:hidden"
             onClick={() => setMobileOpen(true)}
           >
             <Menu size={26} />
@@ -223,7 +223,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-40 bg-black/50 md:hidden"
+              className="fixed inset-0 z-40 bg-black/50 lg:hidden"
               onClick={() => setMobileOpen(false)}
             />
             <motion.div
@@ -232,7 +232,7 @@ export default function Navbar() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: shouldReduceMotion ? 0 : '100%', opacity: shouldReduceMotion ? 0 : 1 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="fixed right-0 top-0 z-50 flex h-full w-full max-w-xs flex-col bg-navy-900 px-6 py-6 md:hidden"
+              className="fixed right-0 top-0 z-50 flex h-full w-full max-w-xs flex-col bg-navy-900 px-6 py-6 lg:hidden"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
