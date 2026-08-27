@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
@@ -73,9 +74,8 @@ export default function Navbar() {
         )}
       >
         <nav className="mx-auto flex h-full max-w-6xl items-center justify-between px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="h-3 w-3 bg-gold-400" />
-            <span className="font-syne text-lg font-bold text-white">DONAYEM TECH</span>
+          <Link href="/" className="flex items-center rounded-md bg-white px-2.5 py-1.5">
+            <Image src="/images/logo.png" alt="DONAYEM TECH" width={893} height={244} className="h-8 w-auto" priority />
           </Link>
 
           <ul className="hidden items-center gap-8 font-inter text-sm font-medium text-white md:flex">
@@ -235,7 +235,9 @@ export default function Navbar() {
               className="fixed right-0 top-0 z-50 flex h-full w-full max-w-xs flex-col bg-navy-900 px-6 py-6 md:hidden"
             >
               <div className="flex items-center justify-between">
-                <span className="font-syne text-base font-bold text-white">DONAYEM TECH</span>
+                <div className="flex items-center rounded-md bg-white px-2 py-1">
+                  <Image src="/images/logo.png" alt="DONAYEM TECH" width={893} height={244} className="h-7 w-auto" />
+                </div>
                 <button
                   type="button"
                   aria-label={t('closeMenu')}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
@@ -27,9 +28,9 @@ export default function Footer() {
     <footer className="bg-navy-900 text-white">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-10 px-6 py-16 md:grid-cols-4">
         <div className="col-span-2 md:col-span-1">
-          <p className="font-syne text-lg font-bold">
-            DONAYEM<span className="text-gold-400"> TECH</span>
-          </p>
+          <div className="inline-flex items-center rounded-md bg-white px-2.5 py-1.5">
+            <Image src="/images/logo.png" alt="DONAYEM TECH" width={893} height={244} className="h-8 w-auto" />
+          </div>
           <p className="mt-4 font-inter text-sm text-gray-400">{t('tagline')}</p>
           <div className="mt-6 flex gap-4">
             <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-gold-400">
