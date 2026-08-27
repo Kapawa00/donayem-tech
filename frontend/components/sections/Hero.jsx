@@ -42,7 +42,7 @@ export default function Hero() {
   }));
 
   return (
-    <section className="relative -mt-[72px] flex min-h-screen items-center overflow-hidden bg-navy-900">
+    <section className="relative -mt-24 flex min-h-screen items-center overflow-hidden bg-navy-900">
       <div className="absolute inset-0 bg-[length:200%_200%] bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 animate-gradient-move" />
 
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

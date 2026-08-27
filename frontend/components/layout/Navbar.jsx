@@ -69,13 +69,13 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          'fixed inset-x-0 top-0 z-50 h-[72px] transition-colors duration-300',
+          'fixed inset-x-0 top-0 z-50 h-24 transition-colors duration-300',
           scrolled ? 'bg-navy-900/95 shadow-sm backdrop-blur-lg' : 'bg-transparent'
         )}
       >
         <nav className="mx-auto flex h-full max-w-6xl items-center justify-between px-6">
           <Link href="/" className="flex items-center">
-            <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-16 w-auto" priority />
+            <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-20 w-auto" priority />
           </Link>
 
           <ul className="hidden items-center gap-8 font-inter text-sm font-medium text-white md:flex">
@@ -236,7 +236,7 @@ export default function Navbar() {
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-11 w-auto" />
+                  <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-14 w-auto" />
                 </div>
                 <button
                   type="button"

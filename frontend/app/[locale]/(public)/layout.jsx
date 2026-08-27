@@ -20,7 +20,7 @@ export default function PublicLayout({ children }) {
       <PageTransitionLoader />
       <ScrollProgress />
       <Navbar />
-      <main className="pt-[72px]">
+      <main className="pt-24">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={pathname}
