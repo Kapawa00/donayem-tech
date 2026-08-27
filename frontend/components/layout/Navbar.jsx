@@ -69,8 +69,8 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          'fixed inset-x-0 top-0 z-50 h-24 transition-colors duration-300',
-          scrolled ? 'bg-navy-900/95 shadow-sm backdrop-blur-lg' : 'bg-transparent'
+          'fixed inset-x-0 top-0 z-50 h-24 bg-navy-900 transition-colors duration-300',
+          scrolled ? 'bg-navy-900/95 shadow-sm backdrop-blur-lg' : ''
         )}
       >
         <nav className="mx-auto flex h-full max-w-6xl items-center justify-between px-6">
