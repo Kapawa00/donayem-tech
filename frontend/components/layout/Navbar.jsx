@@ -75,7 +75,7 @@ export default function Navbar() {
       >
         <nav className="mx-auto flex h-full max-w-6xl items-center justify-between px-6">
           <Link href="/" className="flex items-center">
-            <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-12 w-auto" priority />
+            <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-16 w-auto" priority />
           </Link>
 
           <ul className="hidden items-center gap-8 font-inter text-sm font-medium text-white md:flex">
@@ -236,7 +236,7 @@ export default function Navbar() {
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-9 w-auto" />
+                  <Image src="/images/logo.png" alt="DONAYEM TECH" width={773} height={323} className="h-11 w-auto" />
                 </div>
                 <button
                   type="button"
