@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.00 512.00" width="512" height="512" role="img" aria-label="DONAYEM TECH"><defs>
+<linearGradient id="d-gold" gradientUnits="userSpaceOnUse" x1="8" y1="6" x2="166" y2="94">
+<stop offset="0%" stop-color="#F2E0AC"/><stop offset="26%" stop-color="#D4B063"/>
+<stop offset="54%" stop-color="#B8964F"/><stop offset="80%" stop-color="#957839"/>
+<stop offset="100%" stop-color="#D8BC79"/>
+</linearGradient>
+<linearGradient id="d-hi" gradientUnits="userSpaceOnUse" x1="8" y1="6" x2="166" y2="94">
+<stop offset="0%" stop-color="#FBF0CC"/><stop offset="55%" stop-color="#EBD59A"/>
+<stop offset="100%" stop-color="#CDAC66"/>
+</linearGradient>
+<linearGradient id="d-word" gradientUnits="userSpaceOnUse" x1="0" y1="700" x2="0" y2="0">
+<stop offset="0%" stop-color="#E6CE92"/><stop offset="55%" stop-color="#C4A25C"/>
+<stop offset="100%" stop-color="#A98741"/>
+</linearGradient>
+</defs><rect width="512.00" height="512.00" rx="112" fill="#0B1F3A"/><g transform="translate(47.38 136.10) scale(2.3980)"><rect x="8" y="6.00" width="20" height="25.33" fill="url(#d-gold)"/><rect x="8" y="37.33" width="20" height="25.33" fill="url(#d-hi)"/><rect x="8" y="68.67" width="20" height="25.33" fill="url(#d-gold)"/><path d="M34 6 L60 6 L92 38 L92 62 L60 94 L34 94 L34 74 L54 74 L72 56 L72 44 L54 26 L34 26 Z" fill="url(#d-gold)"/><path d="M98 6 L154 6 L166 18 L166 26 L98 26 Z" fill="url(#d-gold)"/><path d="M122 32 L142 32 L142 82 L130 94 L122 94 Z" fill="url(#d-gold)"/></g></svg>
