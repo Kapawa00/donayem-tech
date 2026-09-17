@@ -21,6 +21,7 @@ class PortfolioItem extends Model
         'media_url',
         'thumbnail_url',
         'client_name',
+        'project_url',
         'completion_date',
         'is_featured',
         'tags',

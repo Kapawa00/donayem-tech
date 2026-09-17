@@ -18,6 +18,7 @@ class PortfolioResource extends JsonResource
             'media_url' => $this->media_url,
             'thumbnail_url' => $this->thumbnail_url,
             'client_name' => $this->client_name,
+            'project_url' => $this->project_url,
             'completion_date' => $this->completion_date?->toDateString(),
             'is_featured' => $this->is_featured,
             'tags' => $this->tags,

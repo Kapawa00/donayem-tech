@@ -62,38 +62,57 @@ export default function PortfolioPreview() {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
           >
-            {items.map((item) => (
-              <motion.div
-                key={item.id}
-                variants={fadeUp}
-                className="group relative aspect-square cursor-pointer overflow-hidden rounded-xl"
-              >
-                <Image
-                  src={item.thumbnail_url || item.media_url}
-                  alt={item.title}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  placeholder="blur"
-                  blurDataURL={BLUR_DATA_URL}
-                />
+            {items.map((item) => {
+              const cardContent = (
+                <>
+                  <Image
+                    src={item.thumbnail_url || item.media_url}
+                    alt={item.title}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
+                  />
 
-                <Badge variant="gold" className="absolute left-3 top-3">
-                  {item.category}
-                </Badge>
-
-                <div
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-1
-                             bg-navy-900/80 px-4 text-center opacity-0 transition-opacity
-                             duration-300 group-hover:opacity-100"
-                >
-                  <p className="font-syne text-lg font-bold text-white">{item.title}</p>
-                  <p className="font-inter text-xs uppercase tracking-widest text-gold-400">
+                  <Badge variant="gold" className="absolute left-3 top-3">
                     {item.category}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+                  </Badge>
+
+                  <div
+                    className="absolute inset-0 flex flex-col items-center justify-center gap-1
+                               bg-navy-900/80 px-4 text-center opacity-0 transition-opacity
+                               duration-300 group-hover:opacity-100"
+                  >
+                    <p className="font-syne text-lg font-bold text-white">{item.title}</p>
+                    <p className="font-inter text-xs uppercase tracking-widest text-gold-400">
+                      {item.category}
+                    </p>
+                  </div>
+                </>
+              );
+
+              return item.project_url ? (
+                <motion.a
+                  key={item.id}
+                  href={item.project_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variants={fadeUp}
+                  className="group relative block aspect-square cursor-pointer overflow-hidden rounded-xl"
+                >
+                  {cardContent}
+                </motion.a>
+              ) : (
+                <motion.div
+                  key={item.id}
+                  variants={fadeUp}
+                  className="group relative aspect-square overflow-hidden rounded-xl"
+                >
+                  {cardContent}
+                </motion.div>
+              );
+            })}
           </motion.div>
         )}
 

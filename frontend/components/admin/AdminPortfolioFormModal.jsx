@@ -15,6 +15,7 @@ const EMPTY_FORM = {
   category: '',
   description: { ...EMPTY_TRANSLATIONS },
   client_name: '',
+  project_url: '',
   completion_date: '',
   tags: '',
   is_featured: false,
@@ -33,6 +34,7 @@ export default function AdminPortfolioFormModal({ item, onClose, onSaved }) {
           category: item.category,
           description: toTranslations(item.description),
           client_name: item.client_name ?? '',
+          project_url: item.project_url ?? '',
           completion_date: item.completion_date ?? '',
           tags: item.tags?.join(', ') ?? '',
           is_featured: item.is_featured,
@@ -73,6 +75,7 @@ export default function AdminPortfolioFormModal({ item, onClose, onSaved }) {
     });
     formData.append('category', form.category);
     formData.append('client_name', form.client_name);
+    if (form.project_url) formData.append('project_url', form.project_url);
     if (form.completion_date) formData.append('completion_date', form.completion_date);
     formData.append('is_featured', form.is_featured ? '1' : '0');
     form.tags
@@ -156,6 +159,15 @@ export default function AdminPortfolioFormModal({ item, onClose, onSaved }) {
           label="Client (optionnel)"
           name="client_name"
           value={form.client_name}
+          onChange={handleChange}
+        />
+        <Input
+          id="pf-project-url"
+          label="Lien du projet (optionnel)"
+          type="url"
+          name="project_url"
+          placeholder="https://..."
+          value={form.project_url}
           onChange={handleChange}
         />
         <Input

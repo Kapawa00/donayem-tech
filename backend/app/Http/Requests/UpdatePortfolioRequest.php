@@ -25,6 +25,7 @@ class UpdatePortfolioRequest extends FormRequest
             'description.de' => ['nullable', 'string'],
             'media' => ['nullable', 'file', 'mimes:jpg,jpeg,png,webp,mp4,mov,webm', 'max:5120'],
             'client_name' => ['nullable', 'string', 'max:255'],
+            'project_url' => ['nullable', 'url', 'max:2048'],
             'completion_date' => ['nullable', 'date'],
             'is_featured' => ['sometimes', 'boolean'],
             'tags' => ['nullable', 'array'],

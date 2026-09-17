@@ -4,12 +4,10 @@ import Badge from '@/components/ui/Badge';
 import { BLUR_DATA_URL } from '@/lib/blurPlaceholder';
 
 function PortfolioCard({ item, onClick }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="group relative block aspect-[4/3] w-full overflow-hidden rounded-xl text-left"
-    >
+  const className = 'group relative block aspect-[4/3] w-full overflow-hidden rounded-xl text-left';
+
+  const content = (
+    <>
       <Image
         src={item.image}
         alt={item.title}
@@ -34,6 +32,20 @@ function PortfolioCard({ item, onClick }) {
           {item.category}
         </p>
       </div>
+    </>
+  );
+
+  if (item.project_url) {
+    return (
+      <a href={item.project_url} target="_blank" rel="noopener noreferrer" className={className}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button type="button" onClick={onClick} className={className}>
+      {content}
     </button>
   );
 }

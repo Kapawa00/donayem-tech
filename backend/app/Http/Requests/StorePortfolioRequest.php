@@ -25,6 +25,7 @@ class StorePortfolioRequest extends FormRequest
             'description.de' => ['nullable', 'string'],
             'media' => ['required', 'file', 'mimes:jpg,jpeg,png,webp,mp4,mov,webm', 'max:5120'],
             'client_name' => ['nullable', 'string', 'max:255'],
+            'project_url' => ['nullable', 'url', 'max:2048'],
             'completion_date' => ['nullable', 'date'],
             'is_featured' => ['boolean'],
             'tags' => ['nullable', 'array'],
